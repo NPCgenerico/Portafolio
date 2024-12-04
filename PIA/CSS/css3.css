@@ -1,0 +1,159 @@
+﻿body {
+    background-color: #e7ebda;
+}
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: #191970; /* Azul oscuro */
+    padding: 10px 0;
+    display: flex; /* Utilizamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente */
+    width: 100%; /* Abarcar el 100% del ancho */
+    height:100px;
+    margin: 0; /* Eliminar margen */
+}
+
+.container {
+    max-width:max-content; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.nav-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block; /* Mostrar elementos en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+.nav-list li:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+.nav-list li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    padding: 10px; /* Espaciado interior */
+    font-size: x-large;
+}
+
+.Separador {
+    color: white; /* Color del texto */
+    font-size:xx-large ;
+}
+
+.imgnavbar {
+    flex: 1; /* Distribuir el espacio entre los logos y los enlaces */
+    text-align: center; /* Centrar los logos */
+}
+
+.IMSSimg {
+    width: 20%;
+    height: 20%;
+}
+
+.Gobimg {
+    width: 60%;
+    height: 60%;
+}
+
+/* Estilos para las secciones de contenido */
+
+h2{
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedorImagen {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+}
+
+/* Estilos para la sección derecha (columna de botones) */
+.contenido {
+    display: flex; /* Utilizamos flexbox para alinear las secciones */
+    justify-content: space-between; /* Espacio entre las secciones */
+    align-items: flex-start; /* Alinear verticalmente */
+    width: 100%; /* Ancho máximo */
+    margin: 20px auto; /* Margen superior e inferior, y centrado horizontal */
+}
+
+.seccion-izquierda, .seccion-derecha {
+    /* Distribuir el espacio entre las secciones */
+   padding: 20px; /* Espaciado interior */
+   height:fit-content;
+}
+
+.seccion-izquierda {
+    background-color: #f0f0f0c7; /* Color de fondo para la sección izquierda */
+    flex: 4;
+    display: grid;
+}
+
+.seccion-derecha {
+    background-color: #e0e0e0ea; /* Color de fondo para la sección derecha */
+    flex: 1;
+}
+
+.imagenbanner {
+    width: 90%;
+    height: auto;
+    position:sticky;
+    left: 5%;
+}
+
+.columna-botones {
+    display: flex;
+    flex-direction: column;
+}
+
+.botones {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #013220;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+.botones:hover {
+    background-color: #026c55;
+}
+
+/* Estilos del panel de accesibilidad */
+
+.panel-accesibilidad {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191970;
+    padding: 20px;
+    border: 2px solid #000000;
+    z-index: 1000;
+    display: none; /* Panel oculto inicialmente */
+}
+
+.textpanel{
+    color: #ffffff;
+}
+
+.boton {
+    position: fixed;
+    right: 2%;
+    top: 90%;
+}

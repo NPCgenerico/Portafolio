@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="Imagenes/IMSS_Logo.png">
+    <title>Conoce al IMSS</title>
+    <!-- Vinculación con el archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/css2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="orientation" content="landscape">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="imgnavbar">
+            <img src="Imagenes/IMSS_Logo.png" alt="IMSS Logo" class="IMSSimg">
+        </div>
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="IMSS.html">Inicio</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Acerca.html">Acerca de nosotros</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Transparente.html">IMSS transparente</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Directorio.html">Directorio de instalaciones</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Atención.html">Atención</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Trámites.html">Trámites</a></li>
+            </ul>
+        </div>
+        <div class="imgnavbar">
+            <img src="Imagenes/GobiernoLogo.svg" alt="Gobierno Logo" class="Gobimg">
+        </div>
+    </nav>
+    <!-- Contenido de la página aquí -->
+    <div class="contenido">
+        <!-- Sección izquierda -->
+        <div class="seccion-izquierda">
+            <h2>Acerca de nosotros</h2>
+            <img src="Imagenes/ConoceAlIMSS.png" alt="Conoce al IMSS" class="imagen">
+            <p id="texto-dinamico"></p>
+            <div id="contenedorImagen" class="contenedorImagen">
+                <img id="imagenPrensa" src="Imagenes/Prensa.png" alt="Sala de Prensa">
+                <img id="imagenEstadisticas" src="Imagenes/Estadisticas.png" alt="Estadísticas e Informes">
+                <img id="imagenAcuerdos" src="Imagenes/Acuerdos.png" alt="Acuerdos">
+                <img id="imagenSeguros" src="Imagenes/Seguros.png" alt="Seguros y Prestaciones">
+                <img id="imagenSubastes" src="Imagenes/Subastas.png" alt="Subastas y Remates">
+                <img id="imagenInmobilarias" src="Imagenes/Comer-inmobiliaria.png" alt="Comerciaización inmobilaria">
+                <img id="imagenTrabajo" src="Imagenes/BolsaTrabajo.png" alt="Bolsa de trabajo">
+                <img id="imagenBienestar" src="Imagenes/Bienestar.png" alt="IMSS Bienestar">
+                <img id="imagenIFAI" src="Imagenes/IFAI.png" alt="INAI-Instituto Nacional de Transparenia, Acceso a la información y Protección de datos personales">
+                <img id="imagenManual" src="Imagenes/Manual.png" alt="IMSS Bienestar">
+                <img id="imagenEtica" src="Imagenes/Etica.png" alt="Manuales Administrativos">
+                <img id="imagenConducta" src="Imagenes/Conducta.png" alt="Código de Conducta">
+                <img id="imagenActividades" src="Imagenes/Actividades.png" alt="Informe de Actividades 2022">
+                <img id="imagenActuación" src="Imagenes/Actuación.png" alt="Protocolo de Actuación">
+                <img id="imagenActAmigable" src="Imagenes/ActuaciónAmigable.png" alt="Protocolo de Actuación Amigable">
+                <img id="imagenConflictos" src="Imagenes/GuíaConflicto.png" alt="Guía para identificar confictos de intereses">
+                <img id="imagenViolentómetro" src="Imagenes/Violentometro.png" alt="Violentometro">
+            </div>
+        </div>
+        <!-- Sección derecha (columna de botones) -->
+        <div class="seccion-derecha">
+            <div class="columna-botones">
+                <button class="botones" id="botonConoce" data-imagen='["Imagenes/Prensa.png","Imagenes/Estadisticas.png",
+                "Imagenes/Acuerdos.png","Imagenes/Seguros.png","Imagenes/Subastas.png",
+                "Imagenes/Comer-inmobiliaria.png","Imagenes/BolsaTrabajo.png","Imagenes/Bienestar.png"]'
+                data-hipervinculo='["https://www.imss.gob.mx/prensa",
+                "https://www.imss.gob.mx/conoce-al-imss/informes-estadisticas",
+                "https://acuerdospublicos.imss.gob.mx/",
+                "https://www.imss.gob.mx/conoce-al-imss/seguros-prestaciones",
+                "https://www.imss.gob.mx/conoce-al-imss/subastas-y-remates",
+                "https://www.imss.gob.mx/comercializacion-inmobiliaria-imss",
+                "https://www.imss.gob.mx/conoce-al-imss/bolsa_de_trabajo",
+                "https://www.imss.gob.mx/conoce-al-imss/bolsa_de_trabajo"]'
+                data-texto="El IMSS, es la Institución con mayor presencia en la atención a la salud y 
+                en la protección social de los mexicanos desde su fundación en 1943, para ello, combina 
+                la investigación y la práctica médica, con la administración de los recursos para el 
+                retiro de sus asegurados, para brindar tranquilidad y estabilidad a los trabajadores y 
+                sus familias, ante cualquiera de los riesgos especificados en la Ley del Seguro Social.
+                Hoy en día, más de la mitad de la población mexicana, tiene algo que ver con el Instituto, 
+                hasta ahora, la más grande en su género en América Latina.">Conoce al IMSS</button>
+                <button class="botones" 
+                data-texto="<b>Misión:</b> Es ser el intrumento básico de la seguridad social, estableciendo 
+                como un servicio público de carácter nacional, para todos los trabajadores y trabajadoras y 
+                sus familias. <br> <b>Visión:</b> Por un México con más y mejor seuridad social. <br> 
+                <b>Mandato:</b> El Instituto Mexicano del Seguro Social tiene un mandato legal derivado del Artículo 
+                123 de la Constitución Política de los Estados Unidos Mexicanos. Su misión es ser el instrumento 
+                básico de la seguridad social, establecido como un servicio público de carácter nacional, para 
+                todos los trabajadores y sus familias. Es decir, el aumento en la cobertura de la población se 
+                persigue como un mandato constitucional, con un sentido social.
+                Por su parte, el Artículo 2 de la Ley del Seguro Social (LSS) establece que la seguridad social 
+                tiene por finalidad garantizar el derecho a la salud, la asistencia médica, la protección de los 
+                medios de subsistencia y los servicios sociales necesarios para el bienestar individual y 
+                colectivo, así como el otorgamiento de una pensión que, en su caso y previo cumplimiento de los 
+                requisitos legales, será garantizada por el Estado.">Misión y visión</button>
+                <button class="botones" id="MarcoNormativo" data-imagen='["Imagenes/IFAI.png","Imagenes/Manual.png"]'
+                data-hipervinculo='["https://home.inai.org.mx/","http://www.funcionpublica.gob.mx/web/transparencia/normatividad/"]'
+                data-texto="Es el conjunto de leyes que gobiernan, rigen y regulan el actuar del Instituto para dar 
+                cumplimiento a su misión. <br> <a href='https://www.imss.gob.mx/conoce-al-imss/marco-normativo'>
+                Te invitamos a conocer estas las leyes</a>">Marco normativo</button>
+                <button class="botones"
+                data-texto="Son las autoridades máximas del Instituto y están conformadas por los siguientes grupos:
+                <ol><li>Asamblea General</li><li>H. Consejo Técnico</li><li>H. Comisión de Vigilancia</li>
+                <li>Dirección General</li><ol><a href='https://www.imss.gob.mx/conoce-al-imss/estructura'>
+                Te invitamos a conocer los cuerpos que conforman al IMSS.</a>">Estructura orgánica</button>
+                <button class="botones" id="botonEtica" data-imagen='["Imagenes/Etica.png","Imagenes/Conducta.png",
+                "Imagenes/Actividades.png","Imagenes/Actuación.png","Imagenes/ActuaciónAmigable.png",
+                "Imagenes/GuíaConflicto.png","Imagenes/Violentometro.png"]'
+                data-hipervinculo='["https://www.imss.gob.mx/sites/all/statics/pdf/codigo-etica.pdf",
+                "https://www.imss.gob.mx/sites/all/statics/pdf/codigo-conducta.pdf",
+                "https://www.imss.gob.mx/sites/all/statics/pdf/IAA-2022.pdf",
+                "https://www.imss.gob.mx/sites/all/statics/pdf/protocolo-actuacion.pdf",
+                "https://www.imss.gob.mx/sites/all/statics/pdf/protocolo-actuacion-amigable.pdf",
+                "https://www.imss.gob.mx/sites/all/statics/pdf/guia-conflicto-intereses.pdf",
+                "https://www.imss.gob.mx/sites/all/statics/pdf/violentometro.pdf"]'
+                data-texto="En el IMSS contamos con un Comité de Ética, integrado por un grupo multidisciplinario, 
+                que establece y coordina las líneas de actuación para que las y los servidores públicos nos conduzcamos 
+                de acuerdo a los valores contenidos en nuestro Código de Conducta.<br>
+                Visita este espacio para conocer sus actividades, el contenido de nuestro Código, así como los 
+                resultados obtenidos.">Comité de Ética</button>
+                <button class="botones"
+                data-texto="El objetivo de este portal es fortalecer el sentido de pertenencia institucional y 
+                sindical, mejorar el clima laboral y transformar la cultura de servicio en el Instituto.<br>
+                <a href='https://www.imss.gob.mx/SERIMSS'>Conoce el Programa SER IMSS.</a>">Programa SER IMSS</button>
+                <button class="botones"
+                data-texto="Conoce los avisos de privacidad con que cuenta el IMSS para diversos servicios tanto
+                presenciales como digitales.<br><a href='https://www.imss.gob.mx/avisos-privacidad'>¡Consúlta tus avisos de 
+                privacidad!.</a>">Avisos de Privacidad</button>
+                <button class="botones"
+                data-texto="Mujeres que nos inspiran en tiempos de COVID. En conmemoración del Día Internacional 
+                de la Mujer,<a href='https://www.imss.gob.mx/mujeres-que-imsspiran'>IMMSpirate en aquellas mujeres.</a>">
+                Mujeres que IMSSpiran</button>
+                <!-- Agrega más botones según sea necesario -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de accesibilidad -->
+    <div class="boton">
+        <button id="accesibilidadBtn">
+            <span class="mdp-readabler-trigger-button-icon">
+                <!-- Icono del botón de accesibilidad -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: #2c6759;transform: 0 ;">
+                    <!-- Aquí puedes agregar el icono de accesibilidad, por ejemplo, un icono de accesibilidad estándar -->
+                    <circle cx="12" cy="7.5" r="1.5"></circle>
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                    <path d="M16.5 10.5 16 9l-3 1h-2L8 9l-.5 1.5 3 1V13L9 17.25l1.5.75 1.25-3.5h.5L13.5 18l1.5-.75L13.5 13v-1.5l3-1z"></path>
+                </svg>
+            </span>
+            <span class="mdp-readabler-trigger-button-caption" style="font-size: 16px; color: rgb(44, 103, 89); font-weight: bold;">
+                Botón de Accesibilidad
+            </span>
+        </button>
+    </div>
+
+    <!-- Panel de accesibilidad -->
+    <div id="panelAccesibilidad" class="panel-accesibilidad">
+        <h3 class="textpanel">Panel de Accesibilidad</h3>
+        <label for="tamañoTexto" class="textpanel">Tamaño del Texto:</label>
+        <input type="range" id="tamañoTexto" min="10" max="30" value="16">
+        <label for="contraste" class="textpanel">Contraste:</label>
+        <select id="contraste">
+            <option value="normal">Normal</option>
+            <option value="alto">Alto</option>
+        </select>
+        <button id="cerrarPanel">Cerrar</button>
+    </div>
+    
+    <!-- Vinculación con el archivo JavaScript -->
+    <script src="JS/js2.js" type="text/javascript" defer></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+﻿body {
+    background-color: #e7ebda;
+}
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: #191970; /* Azul oscuro */
+    padding: 10px 0;
+    display: flex; /* Utilizamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente */
+    width: 100%; /* Abarcar el 100% del ancho */
+    height:100px;
+    margin: 0; /* Eliminar margen */
+}
+
+.container {
+    max-width:max-content; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.nav-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block; /* Mostrar elementos en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+.nav-list li:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+.nav-list li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    padding: 10px; /* Espaciado interior */
+    font-size: x-large;
+}
+
+.Separador {
+    color: white; /* Color del texto */
+    font-size:xx-large ;
+}
+
+.imgnavbar {
+    flex: 1; /* Distribuir el espacio entre los logos y los enlaces */
+    text-align: center; /* Centrar los logos */
+}
+
+.IMSSimg {
+    width: 20%;
+    height: 20%;
+}
+
+.Gobimg {
+    width: 60%;
+    height: 60%;
+}
+
+/* Estilos para las secciones de contenido */
+
+h2{
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido {
+    display: flex; /* Utilizamos flexbox para alinear las secciones */
+    justify-content: space-between; /* Espacio entre las secciones */
+    align-items: flex-start; /* Alinear verticalmente */
+    width: 100%; /* Ancho máximo */
+    margin: 20px auto; /* Margen superior e inferior, y centrado horizontal */
+}
+
+.seccion-izquierda, .seccion-derecha {
+     /* Distribuir el espacio entre las secciones */
+    padding: 20px; /* Espaciado interior */
+    height:fit-content;
+}
+
+.seccion-izquierda {
+    background-color: #f0f0f0c7; /* Color de fondo para la sección izquierda */
+    flex: 4;
+}
+
+.seccion-derecha {
+    background-color: #e0e0e0ea; /* Color de fondo para la sección derecha */
+    flex: 1;
+}
+
+table {
+    text-align: center;
+}
+
+.accesos {
+    color: white; /* Color del texto */
+    font-size: xx-large;
+}
+
+.Accesosimg1 {
+    margin-top: -15%;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.Accesosimg2 {
+    margin-top: -15%;
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.Accesosimg3 {
+    margin-top: -15%;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+/* Estilos del panel de accesibilidad */
+.panel-accesibilidad {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191970;
+    padding: 20px;
+    border: 2px solid #000000;
+    z-index: 1000;
+    display: none; /* Panel oculto inicialmente */
+}
+
+.tablon-anuncios {
+    margin-top: -5%;
+}
+
+.textpanel{
+    color: #ffffff;
+}
+
+.boton {
+    position: fixed;
+    right: 2%;
+    top: 90%;
+}
+
+/* Estilos del la galería */
+
+.galeria-imagenes {
+    position: relative; /* Establecer posición relativa para que las imágenes sean posicionadas absolutamente */
+    width: 100%; /* Asegurar que la galería ocupe todo el ancho disponible */
+    height: 100%; /* Inicialmente, establecer altura en 0 */
+    padding-top: 56.25%; /* Proporción de aspecto 16:9 para las imágenes (ajustar según sea necesario) */
+    overflow: hidden; /* Ocultar contenido que exceda del contenedor */
+}
+
+.galeria-imagenes img {
+    position: absolute; /* Posicionar las imágenes absolutamente */
+    top: 0; /* Alinear las imágenes en la parte superior */
+    left: 0; /* Alinear las imágenes en la parte izquierda */
+    width: 100%; /* Asegurar que las imágenes ocupen todo el ancho del contenedor */
+    height: 100%; /* Asegurar que las imágenes ocupen todo el alto del contenedor */
+    object-fit:contain; /* Escalar la imagen para que cubra el contenedor */
+    transition: opacity 0.5s ease-in-out; /* Transición suave para la opacidad */
+}
+
+.contenedor-botones {
+    position: absolute;
+    top: 23%;
+    left: 35%
+}
+

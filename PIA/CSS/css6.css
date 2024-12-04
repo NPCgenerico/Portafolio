@@ -1,0 +1,139 @@
+﻿body {
+    background-color: #e7ebda;
+}
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: #191970; /* Azul oscuro */
+    padding: 10px 0;
+    display: flex; /* Utilizamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente */
+    width: 100%; /* Abarcar el 100% del ancho */
+    height:100px;
+    margin: 0; /* Eliminar margen */
+}
+
+.container {
+    max-width:max-content; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.nav-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block; /* Mostrar elementos en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+.nav-list li:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+.nav-list li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    padding: 10px; /* Espaciado interior */
+    font-size: x-large;
+}
+
+.Separador {
+    color: white; /* Color del texto */
+    font-size:xx-large ;
+}
+
+.imgnavbar {
+    flex: 1; /* Distribuir el espacio entre los logos y los enlaces */
+    text-align: center; /* Centrar los logos */
+}
+
+.IMSSimg {
+    width: 20%;
+    height: 20%;
+}
+
+.Gobimg {
+    width: 60%;
+    height: 60%;
+}
+
+/* Estilos para las secciones de contenido */
+
+.contenido {
+    display: flex; /* Utilizamos flexbox para alinear las secciones */
+    justify-content: space-between; /* Espacio entre las secciones */
+    align-items: flex-start; /* Alinear verticalmente */
+    width: 100%; /* Ancho máximo */
+    margin: 20px auto; /* Margen superior e inferior, y centrado horizontal */
+}
+
+.seccion-izquierda, .seccion-derecha {
+     /* Distribuir el espacio entre las secciones */
+    padding: 20px; /* Espaciado interior */
+    height:fit-content;
+}
+
+.seccion-izquierda {
+    background-color: #f0f0f0c7; /* Color de fondo para la sección izquierda */
+    flex: 4;
+}
+
+.seccion-derecha {
+    background-color: #e0e0e0ea; /* Color de fondo para la sección derecha */
+    flex: 1;
+}
+
+h2{
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 100%;
+}
+
+.Tramites {
+    text-align: center;
+}
+
+.tramitesimg{
+    width: 100%; /* Ancho del 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-width: 280px; /* Ancho máximo para evitar que las imágenes se hagan demasiado grandes */
+    display: block; /* Asegura que las imágenes se muestren como bloques */
+    margin: auto; /* Centra las imágenes horizontalmente */
+}
+
+/* Estilos del panel de accesibilidad */
+
+.panel-accesibilidad {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191970;
+    padding: 20px;
+    border: 2px solid #000000;
+    z-index: 1000;
+    display: none; /* Panel oculto inicialmente */
+}
+
+.textpanel{
+    color: #ffffff;
+}
+
+.boton {
+    position: fixed;
+    right: 2%;
+    top: 90%;
+}

@@ -1,0 +1,251 @@
+﻿body {
+    background-color: #e7ebda;
+}
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: #191970; /* Azul oscuro */
+    padding: 10px 0;
+    display: flex; /* Utilizamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente */
+    width: 100%; /* Abarcar el 100% del ancho */
+    height:100px;
+    margin: 0; /* Eliminar margen */
+}
+
+.container {
+    max-width:max-content; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.nav-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block; /* Mostrar elementos en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+.nav-list li:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+.nav-list li a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    padding: 10px; /* Espaciado interior */
+    font-size: x-large;
+}
+
+.Separador {
+    color: white; /* Color del texto */
+    font-size:xx-large ;
+}
+
+.imgnavbar {
+    flex: 1; /* Distribuir el espacio entre los logos y los enlaces */
+    text-align: center; /* Centrar los logos */
+}
+
+.IMSSimg {
+    width: 20%;
+    height: 20%;
+}
+
+.Gobimg {
+    width: 60%;
+    height: 60%;
+}
+
+/* Estilos para las secciones de contenido */
+
+h2{
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido {
+    display: flex; /* Utilizamos flexbox para alinear las secciones */
+    justify-content: space-between; /* Espacio entre las secciones */
+    align-items: flex-start; /* Alinear verticalmente */
+    width: 100%; /* Ancho máximo */
+    margin: 20px auto; /* Margen superior e inferior, y centrado horizontal */
+}
+
+.seccion-izquierda, .seccion-derecha {
+     /* Distribuir el espacio entre las secciones */
+    padding: 20px; /* Espaciado interior */
+    height:fit-content;
+}
+
+.seccion-izquierda {
+    background-color: #f0f0f0c7; /* Color de fondo para la sección izquierda */
+    flex: 5;
+}
+
+.seccion-derecha {
+    background-color: #e0e0e0ea; /* Color de fondo para la sección derecha */
+    flex: 2;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.recuadro {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.recuadro h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.recuadro img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recuadro p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.banner {
+    display: flex; /* Utilizamos flexbox para alinear las secciones */
+    justify-content: space-between; /* Espacio entre las secciones */
+    align-items: flex-start; /* Alinear verticalmente */
+    width: 100%; /* Ancho máximo */
+    margin: 20px auto; /* Margen superior e inferior, y centrado horizontal */
+    flex-wrap: wrap;
+    gap: 20px;
+    background: linear-gradient(to right, green, blue, indigo, violet);
+}
+
+.banner-texto {
+    flex: 1;
+    justify-content: space-between; /* Espacio entre las secciones */
+    align-items: flex-start; /* Alinear verticalmente */
+    width: 100%; /* Ancho máximo */
+    margin: 30px 30px; /* Margen superior e inferior, y centrado horizontal */
+}
+
+.banner h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 250%;
+}
+
+.banner p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 150%;
+}
+
+.banner-imagen {
+    flex: 1;
+}
+
+.imagen-con-fondo {
+    display: inline-block; /* Para que el div se ajuste al contenido */
+    position: relative; /* Para poder posicionar el círculo */
+}
+  
+.imagen-con-fondo::before {
+    content: ''; /* Necesario para crear un elemento pseudo ::before */
+    position: absolute; /* Posiciona el círculo con respecto al div padre */
+    top: 35%; /* Alinea el círculo verticalmente */
+    left: 50%; /* Alinea el círculo horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el círculo */
+    width: 50px; /* Diámetro del círculo */
+    height: 50px; /* Diámetro del círculo */
+    border-radius: 50%; /* Hace que el borde sea circular */
+    background-color: #191970; /* Color de fondo del círculo */
+    z-index: -1; /* Coloca el círculo detrás de la imagen */
+}
+
+.botonEnlace {
+    background-color: #013220;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.botonEnlace:hover {
+    background-color: #03291a; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos del los botones */
+
+.contenedor-expandible {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #191970;
+    margin-top: 10px;
+    align-items: center; /* Alinear verticalmente */
+}
+
+.boton-expandible {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #013220;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+#imagen-expandible {
+    max-width: 100%;
+    height: auto;
+}
+
+#cerrar {
+    margin-bottom: 10px;
+}
+
+/* Estilos del panel de accesibilidad */
+
+.panel-accesibilidad {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191970;
+    padding: 20px;
+    border: 2px solid #000000;
+    z-index: 1000;
+    display: none; /* Panel oculto inicialmente */
+}
+
+.textpanel{
+    color: #ffffff;
+}
+
+.boton {
+    position: fixed;
+    right: 2%;
+    top: 90%;
+}

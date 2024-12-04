@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="Imagenes/IMSS_Logo.png">
+    <title>IMSS Transparente</title>
+    <!-- Vinculación con el archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/css3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="orientation" content="landscape">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="imgnavbar">
+            <img src="Imagenes/IMSS_Logo.png" alt="IMSS Logo" class="IMSSimg">
+        </div>
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="IMSS.html">Inicio</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Acerca.html">Acerca de nosotros</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Transparente.html">IMSS transparente</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Directorio.html">Directorio de instalaciones</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Atención.html">Atención</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Trámites.html">Trámites</a></li>
+            </ul>
+        </div>
+        <div class="imgnavbar">
+            <img src="Imagenes/GobiernoLogo.svg" alt="Gobierno Logo" class="Gobimg">
+        </div>
+    </nav>
+    <!-- Contenido de la página aquí -->
+    <div class="contenido">
+        <!-- Sección izquierda -->
+        <div class="seccion-izquierda">
+            <h2>IMSS Transparente</h2>
+            <img src="Imagenes/IMSStransparente.jpeg" alt="Conoce al IMSS" class="imagenbanner">
+            <p id="texto-dinamico"></p>
+            <div id="contenedorImagen" class="contenedorImagen">
+                <img id="imagenGuíaDenuncia" src="Imagenes/GuíaDenuncia.jpg" alt="Guiando tu denuncia, está para ayudarte!">
+                <img id="imagenPlataforma" src="Imagenes/Plataforma.jpg" alt="Plataforma Nacional de Transparencia">
+                <img id="imagenConsulta" src="Imagenes/Consulta.jpg" alt="Consulta nuestras obligaciones de transparencia (LGT Articulo 64)">
+                <img id="imagenPOT" src="Imagenes/POT.jpg" alt="Portal de obligaciones de Transparencia">
+                <img id="imagenSIPOT" src="Imagenes/SIPOT.jpg" alt="Sistema Institucional de Pagos a Proveedores">
+            </div>
+        </div>
+        
+        <!-- Sección derecha (columna de botones) -->
+        <div class="seccion-derecha">
+            <div class="columna-botones">
+                <button class="botones"
+                data-texto="Promover, fomentar y difundir la cultura de la transparencia, el acceso a la información, 
+                la participación ciudadana, así como la rendición de cuentas, es una obligación de todas las 
+                instituciones públicas del país. <br>
+                Por ello el IMSS, a través de su Portal Web Institucional en el Apartado de Transparencia, provee lo 
+                necesario para que todo solicitante pueda tener acceso a la información mediante procedimientos 
+                sencillos y expeditos.">Transparencia</button>
+                <button class="botones" data-imagen='["Imagenes/SIPOT.jpg", "Imagenes/Plataforma.jpg"]'
+                data-hipervinculo='["https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/faces/view/consultaPublica.xhtml?idEntidad=MzM=&idSujetoObligado=MTgw#tarjetaInformativa",
+                "https://www.plataformadetransparencia.org.mx/"]'
+                data-texto="<ol>
+                <a href='https://www.imss.gob.mx/transparencia/unidad-transparencia'><li>Unidad de Transparencia</li></a>
+                <a href='https://www.imss.gob.mx/transparencia/comite-informacion-fp'><li>Comité de Transparencia</li></a>
+                <li>Obligaciones de Transparencia (SIPOT). Aquí podrás consultar el directorio, currícula de personas 
+                servidoras públicas, contrataciones, sueldos, presupuesto, entre otra información del IMSS”</li>
+                <li>Solicitudes de Información. Podrás solicitar información pública a través de la Plataforma 
+                Nacional de Transparencia</li>
+                <a href='https://www.imss.gob.mx/transparencia/indice-expedientes-fp'><li>Índice de Expedientes Clasificados como Reservados</li></a>
+                <a href='https://www.imss.gob.mx/transparencia/fideicomisos'><li>Acceso a Fideicomisos</li></a>
+                <a href='https://www.imss.gob.mx/transparencia/denuncias'><li>Denuncias por Incumplimiento de Obligaciones de Transparencia</li></a>
+                <a href='https://www.imss.gob.mx/sites/all/statics/pdf/transparencia/Programa-Capacitacion-2023.pdf'><li>Programa de Capacitación 2023</li></a>
+                </ol>">Acceso a la información</button>
+                <button class="botones"
+                data-texto="Información relacionada con el tratamiento de los datos personales en posesión del Instituto 
+                Mexicano del Seguro Social, en cumplimiento a los principios, deberes y obligaciones establecidos en la 
+                normatividad aplicable en materia de protección de datos personales. <br> 
+                <a href='https://www.imss.gob.mx/transparencia/datos-personales'>
+                Te invitamos a conocer la protección de tus datos personales</a>">Protección de Datos Personales</button>
+                <button class="botones" data-imagen='["Imagenes/Plataforma.jpg","Imagenes/Consulta.jpg","Imagenes/POT.jpg"]'
+                data-hipervinculo='["https://www.plataformadetransparencia.org.mx/",
+                "http://consultapublicamx.inai.org.mx:8080/vut-web/?idSujetoObigadoParametro=180&idEntidadParametro=33&idSectorParametro=21",
+                "http://portaltransparencia.gob.mx/buscador/search/search.do?method=begin"]'
+                data-texto="
+                <ul>
+                    <a href='https://www.imss.gob.mx/conoce-al-imss'><li>Información Socialmente útil</li></a>
+                    <li>Temas recurrentes que son motivo de solicitudes de acceso a la información</li>
+                    <ul>
+                        <a href='https://www.imss.gob.mx/derechoH'><li>Pensiones y Jubilaciones (Requisitos)</li></a>
+                        <a href='https://tinyurl.com/ykggj44c'><li>Remuneraciones</li></a>
+                        <a href='https://www.imss.gob.mx/imssdigital'><li>Desglose de semanas reconocidas</li></a>
+                        <a href='https://tinyurl.com/yw2ctkj9'><li>Marco Jurídico</li></a>
+                        <a href='https://tinyurl.com/yo2tsz6g'><li>Licitaciones</li></a>
+                        <a href='https://tinyurl.com/2au4636f'><li>Información sobre empleados del Instituto Mexicano del Seguro Social</li></a>
+                    </ul>
+                    <a href='https://www.imss.gob.mx/transparencia/proactiva-fp'><li>Transparencia Proactiva</li></a>
+                    <li>Base de colaboración del Programa Nacional de Combate a la Corrupción y a la Impunidad, y de Mejora de la Gestión Pública 2019-2024</li>
+                    <ul>
+                        <li>Atención al Compromiso 9 de las bases de colaboración del PNCCIMGP, reporte correspondiente al año 2021</li>
+                        <ul>
+                            <a href='https://www.imss.gob.mx/sites/all/statics/pdf/transparencia/Politica_de_Transparencia_Gobierno_Abierto_y_Datos_Abiertos_de_la_APF_20.pdf'>
+                                <li>Política de Transparencia, Gobierno Abierto y Datos Abiertos de la Administración Pública Federal 2021-2024</li>
+                            </a>
+                        </ul>
+                    </ul>
+                    <li>Información de Interés General</li>
+                    <ul>
+                        <a href='https://www.imss.gob.mx/salud-en-linea'><li>Salud en línea</li></a>
+                        <a href='https://www.imss.gob.mx/derechoH'><li>Información y trámites para derechohabientes del IMSS</li></a>
+                        <a href='https://www.imss.gob.mx/transparencia/participacion-ciudadana'><li>Participación ciudadana</li></a>
+                        <li>Licitaciones públicas</li>
+                        <ul>
+                            <li>
+                                <a href='https://compranet.hacienda.gob.mx/web/login.html'>CompraNet</a>. Sistema electrónico de información 
+                                pública gubernamental en materia de contrataciones públicas y es de uso obligado para los sujetos señalados 
+                                en el artículo 1 de la Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público (LAASSP) y de la Ley 
+                                de Obras Públicas y Servicios Relacionados con las Mismas (LOPSRM ).
+                            </li>
+                            <li>
+                                <a href='https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/faces/view/consultaPublica.xhtml?idEntidad=MzM=&idSujetoObligado=MTgw#tarjetaInformativa'>
+                                SIPOT</a>. Es el módulo de la Plataforma Nacional de Transparencia (PNT) a través del cual, los ciudadanos podrán 
+                                realizar la consulta de la información pública de los sujetos obligados de cada una de las entidades federativas 
+                                y de la Federación.
+                            </li>
+                            <li>
+                                <a href='https://www.imss.gob.mx/licitaciones-publicas'>Transmisión en vivo de las Licitaciones Públicas realizadas en Nivel Central </a>. 
+                                Transparentar qué se compra y cómo se compra en el IMSS es uno de los ejes medulares de las acciones en materia de Transparencia 
+                                Proactiva; es por ello por lo que el IMSS transmite en vivo los procesos de licitación más relevantes a Nivel Central, a través 
+                                del canal abierto de YouTube.
+                            </li>
+                        </ul>
+                        <a href='https://www.imss.gob.mx/transparencia/ayudas-subsidios'>
+                            <li>Ayudas y Subsidios, Dirección de Prestaciones Médicas</li>
+                        </a>
+                        <li>Información Financiera</li>
+                        <ul>
+                            <a href='https://www.imss.gob.mx/transparencia/informacion-financiera/contable'>
+                                <li>Contable.</li>
+                            </a>
+                            <a href='https://www.imss.gob.mx/transparencia/informacion-financiera/presupuestal'>
+                                <li>Presupuestal</li>
+                            </a>
+                            <a href='https://www.imss.gob.mx/transparencia/informacion-financiera/programatica'>
+                                <li>Programática</li>
+                            </a>
+                            <a href='https://www.imss.gob.mx/transparencia/informacion-financiera/cuenta-publica'>
+                                <li>Cuenta Pública</li>
+                            </a>
+                        </ul>
+                        <a href='https://www.imss.gob.mx/servicios/guarderias/participacion-social'>
+                            <li>Participación Social en Guarderías</li>
+                        </a>
+                        <a href='https://www.imss.gob.mx/sites/all/statics/pdf/transparencia/FP-EstudiosOpiniones.pdf'>
+                            <li>Estudios Financiados con Recursos Públicos</li>
+                        </a>
+                        <a href='https://www.imss.gob.mx/transparencia/recomendaciones-fp'>
+                            <li>Recomendaciones y Resoluciones por Disposición</li>
+                        </a>
+                    </ul>
+                </ul>
+                ">Apertura Gubernamental</button>
+                <button class="botones" 
+                data-texto="
+                <ul>
+                    <a href=''><li>instrumentos y herramientas</li></a>
+                    <ul>
+                        <a href=''><li>Mecanismos de Participación Ciudadana</li></a>
+                    </ul>
+                    <li>Información de Programas Presupuestarios del IMSS</li>
+                    <ul>
+                        <a href='https://www.imss.gob.mx/transparencia/indicadores-estudios'>
+                            <li>Indicadores de programas presupuestarios</li>
+                        </a>
+                        <a href='https://www.imss.gob.mx/transparencia/programas-presupuestarios'>
+                            <li>Evaluaciones de los Programas Presupuestarios del IMSS</li>
+                        </a>
+                        <a href='https://www.imss.gob.mx/transparencia/informacion-financiera/programatica'>
+                            <li>Información Financiera &ndash; Programática</li>
+                        </a>
+                    </ul>
+                    <a href='https://www.imss.gob.mx/transparencia/oic'><li>Órgano Interno de Control</li></a>
+                    <li>Catálogo de información de Interés Público</li>
+                    <ul>
+                        <a href='https://www.imss.gob.mx/sites/all/statics/pdf/transparencia/ACT-PUB-03-04-2019-05.zip'>
+                            <li>Acuerdo ACT-PUB-03-04-2019-05</li>
+                        </a>
+                    </ul>
+                    <a href='https://portal-transparencia.funcionpublica.gob.mx/gobierno-abierto/mexico-en-la-alianza-para-el-gobierno-abierto'>
+                        <li>Participación de México en la Alianza para el Gobierno Abierto</li>
+                    </a>
+                </ul>
+                ">Gobierno Abierto</button>
+                <button class="botones"
+                data-texto="Como parte de las iniciativas creadas para fomentar el Gobierno Abierto, el IMSS pone a tu disposición 
+                conjuntos de datos en estándares abiertos (.csv, .rdf, .json y .xml), con información que puede ser consultada sin 
+                restricciones y reutilizada en favor de la ciudadanía.
+                <ul>
+                    <a href='http://datos.imss.gob.mx/'><li>Portal de Datos Abiertos del IMSS</li></a>
+                    <a href='https://www.datos.gob.mx/'><li>Portal de Datos Abiertos del Gobierno de México</li></a>
+                </ul>
+                ">Datos Abiertos</button>
+                <button class="botones" data-imagen='["Imagenes/GuíaDenuncia.jpg"]'
+                data-hipervinculo='["https://www.imss.gob.mx/guiando-tu-denuncia"]'
+                data-texto="Esta plataforma promueve información sobre los distintos canales para denunciar delitos de corrupción, 
+                faltas administrativas y/o infracciones a los Códigos de Ética y Conducta, que involucran personas servidoras 
+                públicas o particulares que tienen relación con el IMSS.">Guiando tu denuncia</button>
+                <!-- Agrega más botones según sea necesario -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de accesibilidad -->
+    <div class="boton">
+        <button id="accesibilidadBtn">
+            <span class="mdp-readabler-trigger-button-icon">
+                <!-- Icono del botón de accesibilidad -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: #2c6759;transform: 0 ;">
+                    <!-- Aquí puedes agregar el icono de accesibilidad, por ejemplo, un icono de accesibilidad estándar -->
+                    <circle cx="12" cy="7.5" r="1.5"></circle>
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                    <path d="M16.5 10.5 16 9l-3 1h-2L8 9l-.5 1.5 3 1V13L9 17.25l1.5.75 1.25-3.5h.5L13.5 18l1.5-.75L13.5 13v-1.5l3-1z"></path>
+                </svg>
+            </span>
+            <span class="mdp-readabler-trigger-button-caption" style="font-size: 16px; color: rgb(44, 103, 89); font-weight: bold;">
+                Botón de Accesibilidad
+            </span>
+        </button>
+    </div>
+
+    <!-- Panel de accesibilidad -->
+    <div id="panelAccesibilidad" class="panel-accesibilidad">
+        <h3 class="textpanel">Panel de Accesibilidad</h3>
+        <label for="tamañoTexto" class="textpanel">Tamaño del Texto:</label>
+        <input type="range" id="tamañoTexto" min="10" max="30" value="16">
+        <label for="contraste" class="textpanel">Contraste:</label>
+        <select id="contraste">
+            <option value="normal">Normal</option>
+            <option value="alto">Alto</option>
+        </select>
+        <button id="cerrarPanel">Cerrar</button>
+    </div>
+    
+    <!-- Vinculación con el archivo JavaScript -->
+    <script src="JS/js3.js" type="text/javascript" defer></script>    
+</body>
+</html>

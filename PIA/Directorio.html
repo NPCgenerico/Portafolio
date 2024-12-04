@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="Imagenes/IMSS_Logo.png">
+    <title>Directorio de instalación del IMSS</title>
+    <!-- Vinculación con el archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/css4.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="orientation" content="landscape">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="imgnavbar">
+            <img src="Imagenes/IMSS_Logo.png" alt="IMSS Logo" class="IMSSimg">
+        </div>
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="IMSS.html">Inicio</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Acerca.html">Acerca de nosotros</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Transparente.html">IMSS transparente</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Directorio.html">Directorio de instalaciones</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Atención.html">Atención</a></li>
+                <li class="Separador">|</li>
+                <li><a href="Trámites.html">Trámites</a></li>
+            </ul>
+        </div>
+        <div class="imgnavbar">
+            <img src="Imagenes/GobiernoLogo.svg" alt="Gobierno Logo" class="Gobimg">
+        </div>
+    </nav>
+    
+    <!-- Contenido de la página aquí -->
+    <div class="contenido">
+        <!-- Sección izquierda -->
+        <div class="seccion-izquierda">
+            <h1>Directorio de instalaciones del IMSS</h1>
+            <div class="filtros">
+                <!-- Filtro de palabra clave -->
+                <h2>Filtrar por palabra clave</h2>
+                <input type="text" id="palabraClave" placeholder="Palabra clave">
+            
+                <!-- Filtro por estados -->
+                <h2>Filtrar por Estado</h2>
+                <div class="filtro-estados">
+                    <button id="filtroEstadosBtn" class="filtro-titulo">Seleccionar Estado</button>
+                    <div id="opcionesEstados" class="opciones-estados">
+                        <!-- Opciones de estados -->
+                        <input type="checkbox" id="aguascalientes" name="estado" value="Aguascalientes">
+                        <label for="aguascalientes">Aguascalientes</label><br>
+                        <input type="checkbox" id="bajacalifornia" name="estado" value="Baja California">
+                        <label for="bajacalifornia">Baja California</label><br>
+                        <input type="checkbox" id="bajacaliforniasur" name="estado" value="Baja California Sur">
+                        <label for="bajacaliforniasur">Baja California Sur</label><br>
+                        <input type="checkbox" id="campeche" name="estado" value="Campeche">
+                        <label for="campeche">Campeche</label><br>
+                        <input type="checkbox" id="chiapas" name="estado" value="Chiapas">
+                        <label for="chiapas">Chiapas</label><br>
+                        <input type="checkbox" id="chihuahua" name="estado" value="Chihuahua">
+                        <label for="chihuahua">Chihuahua</label><br>
+                        <input type="checkbox" id="cdmx" name="estado" value="Ciudad de México">
+                        <label for="cdmx">Ciudad de México</label><br>
+                        <input type="checkbox" id="coahuila" name="estado" value="Coahuila">
+                        <label for="coahuila">Coahuila</label><br>
+                        <input type="checkbox" id="colima" name="estado" value="Colima">
+                        <label for="colima">Colima</label><br>
+                        <input type="checkbox" id="durango" name="estado" value="Durango">
+                        <label for="durango">Durango</label><br>
+                        <input type="checkbox" id="estadodemexico" name="estado" value="Estado de México">
+                        <label for="estadodemexico">Estado de México</label><br>
+                        <input type="checkbox" id="guanajuato" name="estado" value="Guanajuato">
+                        <label for="guanajuato">Guanajuato</label><br>
+                        <input type="checkbox" id="guerrero" name="estado" value="Guerrero">
+                        <label for="guerrero">Guerrero</label><br>
+                        <input type="checkbox" id="hidalgo" name="estado" value="Hidalgo">
+                        <label for="hidalgo">Hidalgo</label><br>
+                        <input type="checkbox" id="jalisco" name="estado" value="Jalisco">
+                        <label for="jalisco">Jalisco</label><br>
+                        <input type="checkbox" id="michoacan" name="estado" value="Michoacán">
+                        <label for="michoacan">Michoacán</label><br>
+                        <input type="checkbox" id="morelos" name="estado" value="Morelos">
+                        <label for="morelos">Morelos</label><br>
+                        <input type="checkbox" id="nayarit" name="estado" value="Nayarit">
+                        <label for="nayarit">Nayarit</label><br>
+                        <input type="checkbox" id="nuevoleon" name="estado" value="Nuevo León">
+                        <label for="nuevoleon">Nuevo León</label><br>
+                        <input type="checkbox" id="oaxaca" name="estado" value="Oaxaca">
+                        <label for="oaxaca">Oaxaca</label><br>
+                        <input type="checkbox" id="puebla" name="estado" value="Puebla">
+                        <label for="puebla">Puebla</label><br>
+                        <input type="checkbox" id="queretaro" name="estado" value="Querétaro">
+                        <label for="queretaro">Querétaro</label><br>
+                        <input type="checkbox" id="quintanaroo" name="estado" value="Quintana Roo">
+                        <label for="quintanaroo">Quintana Roo</label><br>
+                        <input type="checkbox" id="sanluispotosi" name="estado" value="San Luis Potosí">
+                        <label for="sanluispotosi">San Luis Potosí</label><br>
+                        <input type="checkbox" id="sinaloa" name="estado" value="Sinaloa">
+                        <label for="sinaloa">Sinaloa</label><br>
+                        <input type="checkbox" id="sonora" name="estado" value="Sonora">
+                        <label for="sonora">Sonora</label><br>
+                        <input type="checkbox" id="tabasco" name="estado" value="Tabasco">
+                        <label for="tabasco">Tabasco</label><br>
+                        <input type="checkbox" id="tamaulipas" name="estado" value="Tamaulipas">
+                        <label for="tamaulipas">Tamaulipas</label><br>
+                        <input type="checkbox" id="tlaxcala" name="estado" value="Tlaxcala">
+                        <label for="tlaxcala">Tlaxcala</label><br>
+                        <input type="checkbox" id="veracruz" name="estado" value="Veracruz">
+                        <label for="veracruz">Veracruz</label><br>
+                        <input type="checkbox" id="yucatan" name="estado" value="Yucatán">
+                        <label for="yucatan">Yucatán</label><br>
+                        <input type="checkbox" id="zacatecas" name="estado" value="Zacatecas">
+                        <label for="zacatecas">Zacatecas</label><br>
+                        <!-- Agrega más opciones de estados aquí -->
+                    </div>
+                </div>
+
+                <!-- Filtro por tipo -->
+                <h2>Filtrar por estado</h2>
+                <div class="filtro-tipo">
+                    <p>Instalaciones médicas:</p>
+                    <label><input type="checkbox" value="CLÍNICA"> Clínica </label>
+                    <label><input type="checkbox" value="Hospital"> Hospital </label>
+                    <label><input type="checkbox" value="IMSS bienestar"> IMSS bienestar </label>
+                    <!-- Agrega más opciones según sea necesario -->
+                </div>
+                
+                <div class="filtro-tipo">
+                    <p>Instalaciones administrativas</p>
+                    <label><input type="checkbox" value="Delegación"> Delegación </label>
+                    <label><input type="checkbox" value="Subdelegación"> Subdelegación </label>
+                    <!-- Agrega más opciones según sea necesario -->
+                </div>
+                <div class="filtro-tipo">
+                    <p>Atención al cliente</p>
+                    <label><input type="checkbox" value="Módulo de atención"> Módulo de atención </label>
+                    <!-- Agrega más opciones según sea necesario -->
+                </div>
+                <div class="filtro-tipo">
+                    <p>Otros servicios:</p>
+                    <label><input type="checkbox" value="Centro de Seguridad Social"> Centro de Seguridad Social </label>
+                    <label><input type="checkbox" value="Centro de Prestaciones Sociales"> Centro de Prestaciones Sociales </label>
+                    <label><input type="checkbox" value="Centro Vacacional"> Centro Vacacional </label>
+                    <label><input type="checkbox" value="Guardería"> Guardería </label>
+                    <label><input type="checkbox" value="Velatorio"> Velatorio </label>
+                    <label><input type="checkbox" value="Teatro"> Teatro </label> <br>
+                    <label><input type="checkbox" value="Tienda"> Tienda </label>
+                    <!-- Agrega más opciones según sea necesario -->
+                </div>
+            </div>
+        </div>
+        <!-- Sección derecha -->
+        <div class="seccion-derecha">
+            <div class="tabla-datos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre de la unidad</th>
+                            <th>Tipo de la unidad</th>
+                            <th>Dirección</th>
+                            <th>Estado</th>
+                            <th>Telefono</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                CSS COATEPEC
+                                CENTRO DE SEGURIDAD SOCIAL
+                            </td>
+                            <td>
+                                OTROS SERVICIOS
+
+                                CENTRO DE SEGURIDAD SOCIAL
+                            </td>
+                            <td>
+                                JUáREZ ENTRE 16 DE SEPTIEMBRE Y 
+                                CENTENARIO 112 S/N COATEPEC, 
+                                COL. CENTRO, COATEPEC, C.P. 91500
+                            </td>
+                            <td>VERACRUZ</td>
+                            <td>228 816 03 01</td>
+                            <td>LUNES A VIERNES 8:00 A 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                UMFR MAGDALENA DE LAS SALINAS
+                                HOSPITAL
+                            </td>
+                            <td>
+                                UNIDADES MEDICAS
+                                HOSPITAL
+                            </td>
+                            <td>
+                                AVENIDA INSTITUTO POLITéCNICO NACIONAL 1603 GUSTAVO A. 
+                                MADERO, COL. MAGDALENA DE LAS SALINAS, GUSTAVO A. 
+                                MADERO, C.P. 7760
+                            </td>
+                            <td>
+                                CIUDAD DE MÉXICO
+                            </td>
+                            <td>N/D</td>
+                            <td>N/D</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                HORTO MAGDALENA DE LAS SALINAS
+                                HOSPITAL
+                            </td>
+                            <td>
+                                UNIDADES MEDICAS
+                                HOSPITAL
+                            </td>
+                            <td>
+                                AVENIDA COLECTOR 15 S/N GUSTAVO A. MADERO, COL. 
+                                MAGDALENA DE LAS SALINAS, GUSTAVO A. 
+                                MADERO, C.P. 7760
+                            </td>
+                            <td>
+                                CIUDAD DE MÉXICO
+                            </td>
+                            <td>N/D</td>
+                            <td>N/D</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                TIXPEHUAL
+                                IMSS BIENESTAR
+                            </td>
+                            <td>
+                                UNIDADES MEDICAS
+                                IMSS BIENESTAR
+                            </td>
+                            <td>
+                                CALLE 16 S/N X 23 Y 25 COLONIA CENTRO , 
+                                COL. TIXPEHUAL, C.P. 97386
+                            </td>
+                            <td>
+                                YUCATÁN
+                            </td>
+                            <td>N/D</td>
+                            <td>08:00 - 16:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                UMF 41 FORTUNA
+                                CLÍNICA
+                            </td>
+                            <td>
+                                UNIDADES MEDICAS
+                                CLÍNICA
+                            </td>
+                            <td>
+                                AVENIDA COLECTOR 15 S/N GUSTAVO A. 
+                                MADERO, COL. CAPULTITLAN, 
+                                GUSTAVO A. MADERO, C.P. 7370
+                            </td>
+                            <td>
+                                CIUDAD DE MÉXICO
+                            </td>
+                            <td>N/D</td>
+                            <td>N/D</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                UMFR CONJUNTO COLONIA
+                                HOSPITAL
+                            </td>
+                            <td>
+                                UNIDADES MEDICAS
+                                HOSPITAL
+                            </td>
+                            <td>
+                                CALLE SULLIVAN S/N CUAUHTéMOC, 
+                                COL. SAN RAFAEL, CUAUHTéMOC, 
+                                C.P. 6470
+                            </td>
+                            <td>
+                                CIUDAD DE MÉXICO
+                            </td>
+                            <td>N/D</td>
+                            <td>N/D</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                UMF 6 MERCED
+                                CLÍNICA
+                            </td>
+                            <td>
+                                UNIDADES MEDICAS
+                                CLÍNICA
+                            </td>
+                            <td>
+                                AVENIDA CIRCUNVALACIóN S/N VENUSTIANO CARRANZA, 
+                                COL. MERCED BALBUENA, VENUSTIANO CARRANZA, 
+                                C.P. 15810
+                            </td>
+                            <td>
+                                CIUDAD DE MÉXICO
+                            </td>
+                            <td>N/D</td>
+                            <td>N/D</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                UMF 11 PERALVILLO
+                                CLÍNICA
+                            </td>
+                            <td>
+                                UNIDADES MEDICAS
+                                CLÍNICA
+                            </td>
+                            <td>
+                                CALLE CARUSO Y LEóN CAVALO 302 GUSTAVO A. 
+                                MADERO, COL. NUEVA INDUSTRIAL VALLEJO, 
+                                GUSTAVO A. MADERO, C.P. 7870
+                            </td>
+                            <td>
+                                CIUDAD DE MÉXICO
+                            </td>
+                            <td>N/D</td>
+                            <td>N/D</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                UMF 14 AEROPUERTO
+                                CLÍNICA
+                            </td>
+                            <td>
+                                UNIDADES MEDICAS
+                                CLÍNICA
+                            </td>
+                            <td>
+                                BOULEVARD AEROPUERTO 88 VENUSTIANO CARRANZA, 
+                                COL. SANTA CRUZ AVIACIóN, VENUSTIANO CARRANZA, 
+                                C.P. 15540
+                            </td>
+                            <td>
+                                CIUDAD DE MÉXICO
+                            </td>
+                            <td>N/D</td>
+                            <td>N/D</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                HOSPITAL GENERAL REGIONAL (HGR)1
+                                MÓDULOS DE ATENCIÓN
+                            </td>
+                            <td>
+                                MÓDULOS DE ATENCIÓN
+                                MÓDULOS DE ATENCIÓN
+                            </td>
+                            <td>
+                                AV. BOSQUE DE LOS OLIVOS 101 COMUNIDAD LA GOLETA 101 CHARO, 
+                                COL. COMUNIDAD LA GOLETA, CHARO, C.P. 61301
+                            </td>
+                            <td>
+                                MICHOACÁN
+                            </td>
+                            <td>(351) 512 20 50</td>
+                            <td>7:00-20:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                HOSPITAL GENERAL REGIONAL (HGR) 1
+                                MÓDULOS DE ATENCIÓN
+                            </td>
+                            <td>
+                                MÓDULOS DE ATENCIÓN
+                                MÓDULOS DE ATENCIÓN
+                            </td>
+                            <td>
+                                AV. BOSQUE DE LOS OLIVOS 101 COMUNIDAD LA GOLETA 101 CHARO, 
+                                COL. COMUNIDAD LA GOLETA, CHARO, C.P. 61301
+                            </td>
+                            <td>
+                                MICHOACÁN
+                            </td>
+                            <td>(351) 512 20 50</td>
+                            <td>8:00-8:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                HOSPITAL GENERAL DE ZONA (HGZ) 83
+                                MÓDULOS DE ATENCIÓN
+                            </td>
+                            <td>
+                                MÓDULOS DE ATENCIÓN
+                                MÓDULOS DE ATENCIÓN
+                            </td>
+                            <td>
+                                AV. CAMELINAS 1935 COL. ELECTRICISTAS 1935 MORELIA, 
+                                COL. ELECTRICISTAS, MORELIA, C.P. 58070
+                            </td>
+                            <td>
+                                MICHOACÁN
+                            </td>
+                            <td>(443) 312 21 85 / (443) 312 15 26</td>
+                            <td>8:00-8:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de accesibilidad -->
+    <div class="boton">
+        <button id="accesibilidadBtn">
+            <span class="mdp-readabler-trigger-button-icon">
+                <!-- Icono del botón de accesibilidad -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: #2c6759;transform: 0 ;">
+                    <!-- Aquí puedes agregar el icono de accesibilidad, por ejemplo, un icono de accesibilidad estándar -->
+                    <circle cx="12" cy="7.5" r="1.5"></circle>
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                    <path d="M16.5 10.5 16 9l-3 1h-2L8 9l-.5 1.5 3 1V13L9 17.25l1.5.75 1.25-3.5h.5L13.5 18l1.5-.75L13.5 13v-1.5l3-1z"></path>
+                </svg>
+            </span>
+            <span class="mdp-readabler-trigger-button-caption" style="font-size: 16px; color: rgb(44, 103, 89); font-weight: bold;">
+                Botón de Accesibilidad
+            </span>
+        </button>
+    </div>
+
+    <!-- Panel de accesibilidad -->
+    <div id="panelAccesibilidad" class="panel-accesibilidad">
+        <h3 class="textpanel">Panel de Accesibilidad</h3>
+        <label for="tamañoTexto" class="textpanel">Tamaño del Texto:</label>
+        <input type="range" id="tamañoTexto" min="10" max="30" value="16">
+        <label for="contraste" class="textpanel">Contraste:</label>
+        <select id="contraste">
+            <option value="normal">Normal</option>
+            <option value="alto">Alto</option>
+        </select>
+        <button id="cerrarPanel">Cerrar</button>
+    </div>
+    
+    <!-- Vinculación con el archivo JavaScript -->
+    <script src="JS/js4.js" type="text/javascript" defer></script>
+</body>
+</html>
